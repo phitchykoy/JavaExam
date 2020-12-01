@@ -39,10 +39,3 @@
 ## หน้าแสดงเลขใบสั่งซื้อสินค้า
 ### system_action : แสดง Order_no
 - แสดง Order_no
-
-
-
-| no | value |
-| -- | ----- |
-|  1 | koy   |
-|  2 | ning  | เคร
