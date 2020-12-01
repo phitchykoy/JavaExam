@@ -1,8 +1,8 @@
 # JavaExam
 
-## POST/orders
+## [POST] /orders
 
-## Request Structure (Json view)
+## Request Structure 
 ```
 [    
   {
@@ -16,7 +16,21 @@
 ]
 ```
 
-## Response Structure (Json view)
+### Request Example
+```
+[    
+  {
+    "bookid": 1,
+    "amount": 2
+  },  
+  {
+    "bookid": 3,
+    "amount": 1
+  }
+]
+```
+
+## Response Structure
 
 ```
 {
@@ -30,6 +44,29 @@
       "name": String,
       "price": Integer,
       "amount": Integer
+    }
+  ]
+}
+```
+## Response Example
+```
+{
+  "order_id": 1,
+  "price": 300,
+  "discount": 10,
+  "total_price": 290,
+  "items": [
+    {
+      "bookid": 1,
+      "name": "Harry Potter Part1",
+      "price": 100,
+      "amount": 2
+    },
+    {
+      "bookid": 3,
+      "name": "Harry Potter Part2,
+      "price": 100,
+      "amount": 1
     }
   ]
 }
