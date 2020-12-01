@@ -39,3 +39,23 @@
 ## หน้าแสดงเลขใบสั่งซื้อสินค้า
 ### system_action : แสดง Order_no
 - แสดง Order_no
+
+# Database
+### Table : book
+- book_id : integer (PK)
+- name	: varchar2(200 byte)
+- remain : interger	
+- price : float
+
+### Table : order
+- order_id : integer (PK)
+- price	: float
+- discount : float	
+- total_price : float
+
+### Table : order_item
+- item_id : integer (PK)
+- book_id : integer (FK)
+- amount : float	
+- price : float
+- order_id : integer (FK)
